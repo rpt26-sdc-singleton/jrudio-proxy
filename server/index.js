@@ -17,6 +17,10 @@ app.get('/:id', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
 });
 
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../public', 'index.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`Proxy listening at port ${PORT}`);
 });
