@@ -28,6 +28,7 @@ syllabus/
 title/
 reviews/
 images/
+about/
 
 ## Env variables ##
 .env
