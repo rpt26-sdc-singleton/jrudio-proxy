@@ -24,6 +24,11 @@ coverage
 build/
 dist/
 
+syllabus/
+title/
+reviews/
+images/
+
 ## Env variables ##
 .env
 node_modules
