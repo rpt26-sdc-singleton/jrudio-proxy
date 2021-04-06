@@ -1,4 +1,38 @@
-.header-logo svg {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
   height: 32px;
   width: 127px;
+  padding: 16.25px 24px;
+}
+
+.explore-button {
+  height: 36px;
+  width: 92px;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  color: white;
+  background: none rgb(0, 86, 210);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
