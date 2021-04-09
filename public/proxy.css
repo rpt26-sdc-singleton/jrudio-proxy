@@ -108,3 +108,26 @@ header {
 .join-button span {
   padding: 0 6px;
 }
+
+/* Navigation Bar */
+
+.nav-container {
+  padding: 16px 12px;
+}
+
+.dynamic-nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-link {
+  font-size: 14px;
+  padding-right: 24px;
+  color: #1F1F1F;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
