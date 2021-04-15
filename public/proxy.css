@@ -155,3 +155,39 @@ header {
   color: #2a73CC;
   font-weight: 700;
 }
+
+/* Spaced */
+
+.spaced {
+  margin: 0 auto;
+}
+
+@media (min-width: 608px) {
+  .spaced {
+      width: 576px;
+  }
+}
+
+@media (min-width: 824px) {
+  .spaced {
+      width: 792px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .spaced {
+      width: 1008px;
+  }
+}
+
+@media (min-width: 1184px) {
+  .spaced {
+      width: 1152px;
+  }
+}
+
+@media (min-width: 1472px) {
+  .spaced {
+      width: 1440px;
+  }
+}
