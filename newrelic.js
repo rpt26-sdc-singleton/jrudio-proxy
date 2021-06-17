@@ -5,10 +5,8 @@
  * See lib/config/default.js in the agent distribution for a more complete
  * description of configuration variables and their potential values.
  */
-if (process.env.NODE_ENV !== 'production' && !process.env.CI) {
-  // eslint-disable-next-line global-require
-  require('dotenv').config();
-}
+// eslint-disable-next-line global-require
+require('dotenv').config();
 
 exports.config = {
   /**
