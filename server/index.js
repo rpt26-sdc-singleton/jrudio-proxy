@@ -19,6 +19,12 @@ function loadIndexWithEnv(indexPath = '') {
   });
 }
 
+function getLoaderIOFile() {
+  const loaderFiles = fs.readdirSync(path.resolve(__dirname)).filter((filename) => filename.endsWith('.txt'));
+
+  return loaderFiles[0];
+}
+
 const indexPath = path.resolve(__dirname, '..', 'public', 'index.html');
 
 const indexHTML = loadIndexWithEnv(indexPath);
@@ -27,6 +33,12 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send(indexHTML);
+});
+
+app.get('/loaderio-:id', (req, res) => {
+  const filename = getLoaderIOFile();
+
+  res.sendFile(path.resolve(__dirname, filename));
 });
 
 app.use(express.static(path.resolve(__dirname, '../public')));
