@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  load-balancer:
+    image: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./caddy_data:/data
+      - ./caddy_config:/config
